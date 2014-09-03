@@ -21,7 +21,7 @@ public class ExcelConversion {
         } else {
             try {
                 int nrLinesInMemory = args.length > 3 ? Integer.parseInt(args[3]) : 100;
-                System.out.println("SRC-File: " + args[1] + " | Separator: '" + args[0] + "' | DEST-File: " + args[2] + " | Max Lines in Memory: " + nrLinesInMemory);
+                System.out.println("Starting conversion. SRC-File: " + args[1] + " | Separator: '" + args[0] + "' | DEST-File: " + args[2] + " | Max Lines in Memory: " + nrLinesInMemory);
                 SXSSFWorkbook workbook = new SXSSFWorkbook(nrLinesInMemory);
                 CreationHelper creationHelper = workbook.getCreationHelper();
                 Sheet sheet = workbook.createSheet();
